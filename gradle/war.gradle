@@ -1,0 +1,13 @@
+apply plugin: "war"
+
+bootWar {
+    mainClassName = "com.imz1.server.Imz1UtdbServiceSample1App"
+    includes = ["WEB-INF/**", "META-INF/**"]
+}
+
+war {
+    enabled = true
+    archiveExtension = "war.original"
+    includes = ["WEB-INF/**", "META-INF/**"]
+
+}
